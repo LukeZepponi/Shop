@@ -1,0 +1,100 @@
+<!Doctype html>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <h1> <a class="navbar-brand" href="#">Boost Running</a> </h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Top Deals</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Gender
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Men</a>
+            <a class="dropdown-item" href="#">Women</a>
+            <a class="dropdown-item" href="#">Kids</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Brands
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="nike.html">Nike</a>
+            <a class="dropdown-item" href="adidas.html">Adidas</a>
+            <a class="dropdown-item" href="under-armour.html">Under Armour</a>
+            <a class="dropdown-item" href="vans.html">Vans</a>
+            <a class="dropdown-item" href="yeezy.html">Yeezy</a>
+            <a class="dropdown-item" href="jordan.html">Jordan</a>
+          </div>
+        </li>
+        <a class="navbar-brand" href="#">
+      <img src="https://cdn4.iconfinder.com/data/icons/ikooni-outline-seo-web/128/seo-56-512.png" width="30" height="30" alt="">
+    </a>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" id="search-form">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search-bar">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <h5 class="card-title underline">FOOTWEAR</h5>
+  <div class="card">
+  
+    <div id="images">
+      <img src="https://assets.wired.com/photos/w_1534/wp-content/uploads/2016/09/ff_nike-vapormax_front_angle-1.jpg" height="400px" width="400px" />
+  
+      <img src="https://cdn.shopify.com/s/files/1/0930/7298/products/BB6180_FTW_photo_side-lateral_white_RRNWHJ1FYVMW_1024x1024.jpg?v=1527152598" height="400px" width="400px" />
+      <img src="https://static.seekingalpha.com/uploads/2018/6/5/234751-15282364130314605_origin.png" height="400px" width="400px" />
+  
+      <img src="https://1256852360.rsc.cdn77.org/en/26979/vans-old-skool-modra.jpg" height="400px" width="400px" />
+  
+      <img src="https://www.anpkick.com/image/cache/Adidas/YEEZY/adidas-originals-yeezy-boost-350-v2-blue-tint-B37571_1-1300x1300-1300x1300.jpg"
+  height="400px"
+  width="400px"/>
+      <img src="https://images-na.ssl-images-amazon.com/images/I/91u1ZYgY6XL._UX395_.jpg" height: "400p" width: "400px" />
+    </div>
+  
+    <div class="card-body">
+      <p class="card-text underline">Get These New Shoes Now!! Choose any color you want or customize your own! We have all possible sizes in Men's, Women's, and Kids!</p>
+      <a href="#" class="btn btn-primary">Click here to check out this limited deal! </a>
+    </div>
+  </div>
+
+<style>
+    .underline {
+  text-decoration: underline;
+}
+.underline {
+  text-decoration: underline;
+}
+
+#images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+</style>
+
+<script>
+document.querySelector("#search-form").onsubmit = e => {
+    e.preventDefault();
+    const searchBar = document.querySelector("#search-bar");
+    const searchText = searchBar.value;
+    location.href = `http://localhost:5000/${searchText}.html`;
+};
+
+</script>
